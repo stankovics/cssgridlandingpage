@@ -13,4 +13,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 # Screenshot 
 
-![Full Screen Screenshot of webpage](https://imgur.com/hPVHUW4)
+![Full Screen Screenshot of webpage](https://i.imgur.com/hPVHUW4.png)
