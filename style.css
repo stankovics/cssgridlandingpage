@@ -1,0 +1,202 @@
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --VeryPaleCyan: hsl(193, 100%, 96%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --GrayishBlue: hsl(208, 11%, 55%);
+    --Poppins: 'Poppins', sans-serif;
+    --OpenSans: 'Open Sans', sans-serif;
+}
+body ,body img {
+    font-family: var(--OpenSans);
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-image: url(./images/bg-hero-mobile.svg); /*background in header*/
+    background-size: cover;
+    background-color: rgba(173, 216, 230, 0.214);
+    padding:2em;
+    margin-bottom: 3rem;
+}
+
+.logo{  /*header logo*/
+    grid-column: 1/3;
+    width: 80%;
+    justify-self: start;
+}
+.btn-white{ /*small white button in header*/
+    grid-column: 3/5;
+    height: 2rem;
+    width: 8rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    justify-self: center;
+}
+.btn-white:hover{
+    background-color:var(--Pink);
+    cursor: pointer;
+}
+.btn-white a{
+    text-decoration: none;
+    color: black;
+}
+header h1{
+    grid-column:1/4;
+    padding-top: 4rem;
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+header p{
+    grid-column: 1/5;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+.btn-lg{ /*large pink button in header*/
+    grid-column:1/-1;
+    border-radius: 1.5rem;
+    height:3rem;
+    margin: 3rem;
+    background-color: var(--Pink);
+    color: black;
+}
+.btn-lg a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.btn-lg:hover{
+    background-color: white;
+    cursor: pointer;
+}
+/**/
+.btn-md{ /*medium size pink button on bottom */
+    grid-column:2/-2;
+    border-radius: 1.5rem;
+    height:3rem;
+    margin: 3rem;
+    background-color: var(--Pink);
+    color: black;
+}
+.btn-md a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.btn-md:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.headerpic{ /*background img in header*/
+    grid-column: 1/5;
+    width: 100%;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.secbg{ /*other pics in section background*/
+    display:grid;
+    grid-column: 1/5;
+    width: 100%;
+}
+.sg{ /*sections*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1/-1;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    margin-bottom: 3rem;
+
+}
+.sg h3{ /*sections h3*/
+    grid-column:1/-1;
+    justify-self: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+.sg p{ /*sections p*/
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+    padding-top: 1rem;
+    margin: 1rem;
+    color: var(--GrayishBlue);
+}
+/*Footer styles*/
+footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--VeryDarkCyan);
+    color: white;
+    font-size: 1.3rem;
+
+}
+footer .flogo{ /*logo*/
+    grid-column: 1/2;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+footer .flocation{ /*location*/
+   grid-column: 1/3;
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    padding: 1rem;;
+}
+footer .fphone{ /*phone*/
+    grid-column: 1/3;
+    margin-left: 2.5rem;
+    padding: 1rem;
+}
+footer .femail{ /*email*/
+    grid-column: 1/3;
+    margin-left: 2.5rem;
+    padding: 1rem;
+}
+footer .fmenu{ /*footer menu */
+    grid-column: 1/3;
+    margin-left: 2.5rem;
+    list-style: none;
+    padding-bottom: 1rem;
+}
+footer .fmenu li{
+    margin-top:1rem;
+}
+footer .fmenu a{
+    text-decoration: none;
+    color: inherit;
+}
+footer .fmenu a:hover{
+    color: var(--Pink);
+}
+footer .socialmedia{ /*social media buttons*/
+    font-size: 3rem;
+    grid-column: 2/-2;
+    justify-self: center;
+    list-style: none;
+    margin-bottom: 2rem;
+    
+    
+}
+footer .socialmedia a{
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem;
+}
+footer .socialmedia a:hover{
+    color: var(--Pink);
+}
+.copyright{  /*copyright*/
+   font-size: 1rem;
+    grid-column: 1/5;
+}
